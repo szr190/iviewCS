@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>Button</h1>
+    <h1>Button 按钮</h1>
     <h3>按钮类型</h3>
     <Button>Default</Button>
     <!-- 
@@ -8,12 +8,14 @@
         default、primary、dashed、text、info、success、warning、error
     -->
     <Button type="primary">Primary</Button>
+    <Divider />
     <!-- 
       幽灵按钮 - 使按钮背景透明
         ghost 
     -->
     <h3>幽灵按钮</h3>
     <Button type="info" ghost>Info</Button>
+    <Divider />
     <!-- 
       按钮尺寸
         large,small,default
@@ -22,24 +24,28 @@
     <Button type="success" size="large">Large</Button>
     <Button type="success" size="small">Small</Button>
     <Button type="success" size="default">Default</Button>
+    <Divider />
     <!-- 
       长按钮
         long
     -->
     <h3>长按钮</h3>
     <Button type="error" long>Error</Button>
+    <Divider />
     <!-- 
       禁用状态
         disabled
     -->
     <h3>禁用状态</h3>
     <Button type="dashed" disabled>Dashed</Button>
+    <Divider />
     <!-- 
       按钮形状
         shape - circle或者不设置
     -->
     <h3>按钮形状</h3>
     <Button type="warning" shape="circle">Dashed</Button>
+    <Divider />
     <!-- 
       加载中按钮
         loading
@@ -49,6 +55,7 @@
       <span v-if="!loading">Please Click Me</span>
       <span v-else>Loading</span>
     </Button>
+    <Divider />
     <!-- 
       按钮组 
         shape 形状
@@ -61,18 +68,21 @@
       <Button type="default">M</Button>
       <Button type="dashed">R</Button>
     </ButtonGroup>
+    <Divider />
     <!-- 
       设置原生Button的类型
         button、submit、reset  
     -->
     <h3>设置原生Button的类型</h3>
     <Button html-type="submit">Submit</Button>
+    <Divider />
     <!-- 
       设置按钮的图标类型
       icon
     -->
     <h3>设置按钮的图标类型</h3>
     <Button type="primary" icon="ios-skip-forward"></Button>
+    <Divider />
     <!-- 
       跳转功能
         to - 类似于vue-router

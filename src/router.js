@@ -22,9 +22,19 @@ export default new Router({
       component: () => import('./views/Icon.vue')
     },
     {
-      path: '/grid',
-      name: 'grid',
-      component: () => import('./views/Grid.vue')
+      path: '/grid_base',
+      name: 'grid_base',
+      component: () => import('./views/Grid-base.vue')
+    },
+    {
+      path: '/grid_flex',
+      name: 'grid_flex',
+      component: () => import('./views/Grid-flex.vue')
+    },
+    {
+      path: '/card',
+      name: 'card',
+      component: () => import('./views/Card.vue')
     }
   ]
 })

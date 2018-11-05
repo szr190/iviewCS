@@ -5,12 +5,14 @@
           <Menu :active-name="activeName">
             <MenuItem name="/btn" to="/btn">Button</MenuItem>
             <MenuItem name="/icon" to="/icon">Icon</MenuItem>
-            <MenuItem name="/grid" to="/grid">Grid</MenuItem>
+            <MenuItem name="/grid_base" to="/grid_base">Grid-base</MenuItem>
+            <MenuItem name="/grid_flex" to="/grid_flex">Grid-flex</MenuItem>
+            <MenuItem name="/card" to="/card">Card</MenuItem>
           </Menu>
         </Sider>
         <Layout>
           <Content>
-            <Card padding="50" :bordered="false">
+            <Card :padding="paddingVal" :bordered="false">
               <router-view/>
             </Card>
           </Content>
@@ -24,7 +26,8 @@
 export default {
   data () {
     return {
-      activeName: this.$route.path
+      activeName: this.$route.path,
+      paddingVal: 50
     }
   },
   watch: {
